@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <title>{{ compound_name }}</title>
+  {% if properties -%}
+  <style>
+      table {
+          border-collapse: collapse;
+      }
+      th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: center;
+      }
+      img {
+          display: block;
+          padding-bottom: 30px;
+      }
+      img,table {
+          margin-left: auto;
+          margin-right: auto;
+      }
+      h1 {
+          text-align: center;
+      }
+  </style>
+  {%- endif %}
+</head>
+<body>
+  <header>
+    <a href="../index.html">Home</a>
+    <h1>{{ compound_name }}</h1>
+  </header>
+  <main>
+    {% if image_available -%}
+      <img src="{{ image_src }}" alt="{{ image_src }}">
+    {% else -%}
+      <p>No compound preview found</p>
+    {%- endif -%}
+
+    {%- if properties -%}
+    <table>
+      {%- for property_name, property_value in properties %}
+      <tr>
+        <td>{{property_name}}</td>
+        <td>{{property_value}}</td>
+      </tr>
+      {%- endfor %}
+    </table>
+    {% else -%}
+      <p>No compound data found</p>
+    {% endif -%}
+  </main>
+</body>
+</html>
