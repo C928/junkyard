@@ -1,0 +1,65 @@
+.root {
+    -fx-background-color: #d2b6d2;
+    -fx-font-weight: bold;
+}
+
+.button, .delete-msg-btn, .text-field, .combo-box {
+    -fx-font-size: 14px;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 5px;
+}
+
+.button,
+.eliza-msg,
+.delete-user-msg-btn,
+.combo-box,
+.combo-box .button,
+.combo-box .list-cell,
+.combo-box .list-view,
+.combo-box .arrow-button {
+    -fx-background-color: #ff69b4;
+    -fx-text-fill: #382e3f;
+}
+
+.button:hover, .combo-box .button:hover, .combo-box .list-cell:hover {
+    -fx-background-color: #ff1493;
+}
+
+.button:pressed, .combo-box .button:pressed, .combo-box .list-cell:pressed {
+    -fx-background-color: #bd066a;
+}
+
+.delete-eliza-msg-btn, .delete-user-msg-btn {
+    -fx-background-radius: 50%;
+}
+
+.text-field, .delete-eliza-msg-btn, .user-msg {
+    -fx-background-color: #bac3ff;
+}
+
+.delete-eliza-msg-btn:hover {
+    -fx-background-color: #7781b2;
+}
+
+.delete-eliza-msg-btn:pressed {
+    -fx-background-color: #59628d;
+}
+
+/*
+.msg-box {
+    -fx-background-color: #d2b6d2;
+}
+ */
+
+.eliza-msg, .user-msg {
+    -fx-padding: 10px;
+    -fx-margin: 8px;
+}
+
+.eliza-msg {
+    -fx-background-radius: 20px, 20px, 20px, 0px;
+}
+
+.user-msg {
+    -fx-background-radius: 20px, 20px, 0px, 20px;
+}

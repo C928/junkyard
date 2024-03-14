@@ -1,0 +1,11 @@
+{
+  "Qui est le plus (.*) \\?": [ "Le plus {} est bien sûr votre enseignant de MIF01 !" ],
+  "(Je .*)\\." : [
+    "Pourquoi dites-vous que {}",
+    "Pourquoi pensez-vous que {}",
+    "Êtes-vous sûr que {}"
+  ],
+  "Comment est votre blanquette \\?": ["Elle est bonne."],
+  "La terre est-elle plate \\?": ["Plate comme une pizza."],
+  "Par Osiris et par Apis, tu es un sanglier, un sanglier\\.\\.\\.": ["Vous pouvez en allumez un seul à la fois ?"]
+}
